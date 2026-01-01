@@ -6,26 +6,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const card = document.createElement('div');
     card.className = 'foto-card';
     
-    // URL directa de Drive (funciona igual para videos)
-    let urlDirecta;
-        if (item.tipo === 'video') {
-            // Los videos necesitan el endpoint de stream de Drive
-            urlDirecta = `https://drive.google.com/file/d/${item.id}/preview`;
-        } else {
-            // Para fotos seguimos usando el formato que te funciona bien
-            urlDirecta = `https://lh3.googleusercontent.com/u/0/d/${item.id}`;
-        }
-
-    // Determinamos si es video (puedes ajustar esta lógica según tu JSON)
-    const esVideo = (item.tipo == 'video');
-    // Si no tienes el mimeType, podrías simplemente añadir una propiedad "esVideo: true" en tu script de Apps Script
-
     let mediaHTML = '';
 
-    if (esVideo) {
+    if (item.tipo === 'video') {
+        // Al estar en tu repo, la URL es simplemente el path que pusiste en data.js
         mediaHTML = `
             <video 
-                src="${urlDirecta}" 
+                src="${item.id}" 
                 autoplay 
                 muted 
                 loop 
@@ -33,7 +20,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 class="video-element">
             </video>`;
     } else {
-        mediaHTML = `<img src="${urlDirecta}" alt="${item.titulo}" loading="lazy">`;
+        // Para fotos mantenemos tu formato infalible
+        const urlFoto = `https://lh3.googleusercontent.com/u/0/d/$${item.id}`;
+        mediaHTML = `<img src="${urlFoto}" alt="${item.titulo}" loading="lazy">`;
     }
 
     card.innerHTML = `
