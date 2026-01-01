@@ -9,17 +9,12 @@ document.addEventListener('DOMContentLoaded', () => {
     let mediaHTML = '';
 
     if (item.tipo === 'video') {
-        // Al estar en tu repo, la URL es simplemente el path que pusiste en data.js
-        mediaHTML = `
-            <video 
-                src="${item.id}" 
-                autoplay 
-                muted 
-                loop 
-                playsinline 
-                class="video-element">
-            </video>`;
-    } else {
+    mediaHTML = `
+        <video autoplay muted loop playsinline class="video-element">
+            <source src="${item.id}" type="video/mp4">
+            Tu navegador no soporta el formato de video.
+        </video>`;
+} else {
         // Para fotos mantenemos tu formato infalible
         const urlFoto = `https://lh3.googleusercontent.com/u/0/d/$${item.id}`;
         mediaHTML = `<img src="${urlFoto}" alt="${item.titulo}" loading="lazy">`;
