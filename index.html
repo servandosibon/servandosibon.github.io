@@ -1,139 +1,31 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blog de Iván</title>
-    <style>
-        body::before {
-            content: "";
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100vh;
-            background-image: url('https://assets.weforum.org/article/image/FFL51vOuPJ7ZB5-S--_QKyZeEE-TiD1R8HP3DAonraY.jpg');
-            background-size: cover;
-            background-position: center;
-            filter: brightness(0.5) blur(4px);
-            z-index: -1;
-        }
-
-
-
-
-        header {
-            text-align: center;
-            padding: 1rem;
-            background-color: #4db6ac;
-            color: white;
-            border-radius: 0 0 20px 20px;
-        }
-
-        footer {
-            text-align: center;
-            padding: 1rem;
-            background-color: #4db6ac;
-            color: white;
-            border-radius: 0 0 20px 20px;
-        }
-
-        h1 {
-            margin: 0;
-            font-size: 2rem;
-        }
-
-        section {
-            margin: 2rem auto;
-            max-width: 800px;
-            padding: 1rem;
-        }
-
-        h2 {
-            background-color: #81d4fa;
-            padding: 0.5rem 1rem;
-            border-radius: 10px;
-            color: #0d47a1;
-            font-size: 1.5rem;
-        }
-
-        .unidad-lista {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1rem;
-            margin-top: 1rem;
-        }
-
-        .unidad {
-            background-color: white;
-            border-radius: 12px;
-            padding: 1rem;
-            text-align: center;
-            border: 2px solid #4db6ac;
-            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.2s;
-        }
-
-        .unidad:hover {
-            transform: scale(1.03);
-        }
-
-        .unidad a {
-            text-decoration: none;
-            color: #00796b;
-            font-weight: bold;
-            display: block;
-        }
-
-        footer {
-            text-align: center;
-            font-size: 0.9rem;
-            color: #777;
-            margin-top: 3rem;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Álbum de Carmen y Servando</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <header>
-        <h1>Blog de Iván</h1>
-        <p>Conocimiento del Medio - 4º Primaria</p>
-    </header>
 
-    <section>
-        <h2>📘 Primer Trimestre</h2>
-        <div class="unidad-lista">
-            <div class="unidad"><a href="ud1.html">UD 1: El cuerpo humano I</a></div>
-            <div class="unidad"><a href="ud2.html">UD 2: El cuerpo humano II</a></div>
-            <div class="unidad"><a href="ud3.html">UD 3: Nos cuidamos</a></div>
-            <div class="unidad"><a href="ud4.html">UD 4: Ecosistemas y seres vivos I</a></div>
+    <section class="hero">
+        <div class="hero-content">
+            <span class="pre-title">CAPÍTULO I</span>
+            <h1>Nuestros Momentos <span>Inolvidables</span></h1>
+            <p>Una colección de instantes, risas y el camino que hemos construido juntos.</p>
         </div>
+        <div class="scroll-indicator"></div>
     </section>
 
-    <section>
-        <h2>📗 Segundo Trimestre</h2>
-        <div class="unidad-lista">
-            <div class="unidad"><a href="ud5.html">UD 5: Ecosistemas y seres vivos II</a></div>
-            <div class="unidad"><a href="ud6.html">UD 6: El relieve y los recursos</a></div>
-            <div class="unidad"><a href="ud7.html">UD 7: Explorando el universo</a></div>
-            <div class="unidad"><a href="ud8.html">UD 8: La energía</a></div>
-            <div class="unidad"><a href="ud9.html">UD 9: Materia y máquinas</a></div>
-        </div>
-    </section>
+    <main class="gallery-container" id="album-container">
+        </main>
 
-    <section>
-        <h2>📙 Tercer Trimestre</h2>
-        <div class="unidad-lista">
-            <div class="unidad"><a href="ud10.html">UD 10: El clima en España</a></div>
-            <div class="unidad"><a href="ud11.html">UD 11: La Prehistoria</a></div>
-            <div class="unidad"><a href="ud12.html">UD 12: Un paseo por la historia</a></div>
-        </div>
-    </section>
-
-    <footer>
-        © 2025 - Página educativa para 4º de Primaria
+    <footer class="footer">
+        <p>Hecho con ❤️ para ti</p>
     </footer>
-</body>
 
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
 </html>
