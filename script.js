@@ -2,11 +2,27 @@
 document.addEventListener('DOMContentLoaded', () => {
     const container = document.getElementById('album-container');
 
+    // Ordenar fotos
+    albumData.sort((a, b) => {
+        return parseFloat(a.titulo) - parseFloat(b.titulo);
+    });
+
     albumData.forEach(item => {
     const card = document.createElement('div');
     card.className = 'foto-card';
     
     let mediaHTML = '';
+
+    if (item.tipo === "seccion") {
+        // Creamos un separador de sección
+        const sectionHeader = document.createElement('div');
+        sectionHeader.className = 'section-divider';
+        sectionHeader.innerHTML = `
+            ${item.descripcion ? `<p>${item.descripcion}</p>` : ''}
+        `;
+        container.appendChild(sectionHeader);
+        return; // Saltamos a la siguiente iteración
+    }
 
     if (item.tipo === 'video') {
     mediaHTML = `
@@ -14,9 +30,9 @@ document.addEventListener('DOMContentLoaded', () => {
             <source src="${item.id}" type="video/mp4">
             Tu navegador no soporta el formato de video.
         </video>`;
-} else {
+    } else {
         // Para fotos mantenemos tu formato infalible
-        const urlFoto = `https://lh3.googleusercontent.com/u/0/d/$${item.id}`;
+        const urlFoto = `https://lh3.googleusercontent.com/d/${item.id}`;
         mediaHTML = `<img src="${urlFoto}" alt="${item.titulo}" loading="lazy">`;
     }
 

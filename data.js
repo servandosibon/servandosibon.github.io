@@ -80,6 +80,11 @@ const albumData = [
     "tipo": "imagen"
   },
   {
+        "tipo": "seccion",
+        "titulo": "61.5",
+        "descripcion": "Nos vamoos de Erasmus. Visitas múltiples y viaje a Pragaa (peak absoluto)"
+  },
+  {
     "id": "1IO12Os04yXFw_nxgolUWZZ7zqZm9rY2c",
     "titulo": "59",
     "tipo": "imagen"
@@ -95,6 +100,11 @@ const albumData = [
     "tipo": "imagen"
   },
   {
+        "tipo": "seccion",
+        "titulo": "56.5",
+        "descripcion": "Otras más de verano, que escasean"
+  },
+  {
     "id": "1eMhyMin5Kb0eVZEyaS0nOe0zNZS2XILi",
     "titulo": "56",
     "tipo": "imagen"
@@ -105,6 +115,11 @@ const albumData = [
     "tipo": "imagen"
   },
   {
+        "tipo": "seccion",
+        "titulo": "54.5",
+        "descripcion": "Melendiiiii"
+  },
+  {
     "id": "1lu65R7l6AaJYgXa1B-r4-uLhCXpjxIKf",
     "titulo": "54",
     "tipo": "imagen"
@@ -113,6 +128,11 @@ const albumData = [
     "id": "1XpXdRpL_ConFk6Z5_N7KzZu6wTA83S7e",
     "titulo": "53",
     "tipo": "imagen"
+  },
+  {
+        "tipo": "seccion",
+        "titulo": "52.5",
+        "descripcion": "Otra vez secuestrado a Mazagón, y mira que yo no quiero"
   },
   {
     "id": "19HWrJ-7VJckXdtBgX49qQCOfJSw7EdYe",
@@ -150,6 +170,11 @@ const albumData = [
     "tipo": "imagen"
   },
   {
+        "tipo": "seccion",
+        "titulo": "40.5",
+        "descripcion": "De disfutones en toooodos lados"
+  },
+  {
     "id": "14LPok7KbC-XfMHu0SvI4BiTnfb47p6HV",
     "titulo": "41",
     "tipo": "imagen"
@@ -163,6 +188,11 @@ const albumData = [
     "id": "1hq7bMn-6jk1oPZxt6P9_QUaBx6qTzKaV",
     "titulo": "43",
     "tipo": "imagen"
+  },
+  {
+        "tipo": "seccion",
+        "titulo": "43.5",
+        "descripcion": "Segunda primavera juntos, me lleva de pijo a los palcos y secuestrado a la feria totalmente en contra de mi voluntad (se me ve triste)"
   },
   {
     "id": "1cIwRLqOufer5oCCQo5Rtz1V3vXl2U-vI",
@@ -180,6 +210,11 @@ const albumData = [
     "tipo": "imagen"
   },
   {
+        "tipo": "seccion",
+        "titulo": "46.5",
+        "descripcion": "Castillo de las Guardaas. Qué risa ese día por favor"
+  },
+  {
     "id": "1sHPZNaLDy7jpKHXRhnD2VZJX7huZKtbz",
     "titulo": "47",
     "tipo": "imagen"
@@ -188,6 +223,11 @@ const albumData = [
     "id": "1g8TsqTVyM1bArDPSo4s13-mCInOGxRQs",
     "titulo": "48",
     "tipo": "imagen"
+  },
+  {
+        "tipo": "seccion",
+        "titulo": "48.5",
+        "descripcion": "Días prime en verano en la Antilla, qué felicidad. Fotos extra de mi novia tremendísima"
   },
   {
     "id": "1KZpPye6-Qi3kQkbq77C8yIiVIuOs0YBg",
@@ -230,9 +270,19 @@ const albumData = [
     "tipo": "imagen"
   },
   {
+        "tipo": "seccion",
+        "titulo": "32.5",
+        "descripcion": "Oooootro viaje y no nos cansamos, es el turno de Bérgamo y el Lago di Como (de regalito de cumple)"
+  },
+  {
     "id": "1aMgHyFcb4a3Mdbg4LnmFpul39JZzQPNd",
     "titulo": "32",
     "tipo": "imagen"
+  },
+  {
+        "tipo": "seccion",
+        "titulo": "31.5",
+        "descripcion": "Esta foto de regalo porque mi novia es guapísima"
   },
   {
     "id": "assets/videos/31.mp4",
@@ -250,6 +300,11 @@ const albumData = [
     "tipo": "imagen"
   },
   {
+        "tipo": "seccion",
+        "titulo": "27.5",
+        "descripcion": "¿¿Otro viaje?? Como buenas pulgas aventureras nos vamos a Madrid"
+  },
+  {
     "id": "1gx_U9NKNT7eRhNlmiMBsk8aFPB2MHMZ3",
     "titulo": "23",
     "tipo": "imagen"
@@ -263,6 +318,11 @@ const albumData = [
     "id": "assets/videos/25.mp4",
     "titulo": "25",
     "tipo": "video"
+  },
+  {
+        "tipo": "seccion",
+        "titulo": "24.5",
+        "descripcion": "Carmen me lleva con su familia de vacaciones (varias veces)"
   },
   {
     "id": "1UfS_9cr4lB1hge8uQhyIYLsbbVb_Q5-8",
@@ -300,6 +360,11 @@ const albumData = [
     "tipo": "video"
   },
   {
+        "tipo": "seccion",
+        "titulo": "18.5",
+        "descripcion": "Segundo viajee, vaya ritmo jeje. Esta vez Portugal, como unos absolutos reyes"
+  },
+  {
     "id": "130qgfra3Ehg_kA0lGvMKq3EKUWpcbmi2",
     "titulo": "18",
     "tipo": "imagen"
@@ -325,6 +390,11 @@ const albumData = [
     "tipo": "imagen"
   },
   {
+        "tipo": "seccion",
+        "titulo": "13.5",
+        "descripcion": "Sevilla en primaveraa. Carmen me culturiza a más no poder y nos sacamos un millón de fotos en la feria"
+  },
+  {
     "id": "1RbzdvsKMQKdx4zjniOuMoTbEcZrOwopt",
     "titulo": "12",
     "tipo": "imagen"
@@ -340,6 +410,11 @@ const albumData = [
     "tipo": "imagen"
   },
   {
+        "tipo": "seccion",
+        "titulo": "8.5",
+        "descripcion": "¡¡¡Primer viajeee!!! Empezamos tempranito jeje. Oporto es una ciudad preciosa"
+  },
+  {
     "id": "assets/videos/8.mp4",
     "titulo": "8",
     "tipo": "video"
@@ -353,6 +428,11 @@ const albumData = [
     "id": "1MW6HhI7Lthf1YjdjTr7MoGFFj3QZKN6P",
     "titulo": "7",
     "tipo": "imagen"
+  },
+  {
+        "tipo": "seccion",
+        "titulo": "6.5",
+        "descripcion": "Un poco de disfrutones, que tenemos para rato"
   },
   {
     "id": "1R_oECeFeom4S8Ui-29uS3EjTFVG5Ymvv",
@@ -374,6 +454,11 @@ const albumData = [
     "titulo": "3",
     "tipo": "imagen"
   },
+    {
+        "tipo": "seccion",
+        "titulo": "2.5",
+        "descripcion": "Excursión de Carmen a la playita con pescadito de las Flores (riquísimo)"
+  },
   {
     "id": "1fDpu26eKg-f4_mYkcL2YFaJgFE2SW30m",
     "titulo": "2",
@@ -383,5 +468,10 @@ const albumData = [
     "id": "1O7z5q_S6Q3x7upVwBhb-wzDh2sIBjrjw",
     "titulo": "1",
     "tipo": "imagen"
+  },
+  {
+        "tipo": "seccion",
+        "titulo": "-1",
+        "descripcion": "Empezamos de noviooos. Enchochados a más no poder (como ahora)"
   }
 ]
